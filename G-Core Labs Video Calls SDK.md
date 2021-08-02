@@ -275,8 +275,6 @@ peer - новый юзер в комнате
 | peerId | String | идентификатор юзера |
 |rtcAudioTrack | RTCAudioTrack | видеопоток 
 
----
-
 ## Типы ошибок
 
 ***RoomError***
@@ -297,8 +295,8 @@ func  roomClientHandle(error: GCoreVideoCallsSDK.RoomError)
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NTg4MjE1Nyw4OTI2NTU0OTcsNTMwMD
-AwMzQzLC0xNjk5OTA3NjQzLC0xOTQ5ODczNiwtMTE5MTc1NDk0
-NCw5Mjg4NjQ5NzYsMTc1MjA4NDA5NSwtNjU1Njc4MDgsNjkwNz
-k5MzUyLC0xMzExODgxOTkyXX0=
+eyJoaXN0b3J5IjpbLTIwODAwOTAwNjgsODkyNjU1NDk3LDUzMD
+AwMDM0MywtMTY5OTkwNzY0MywtMTk0OTg3MzYsLTExOTE3NTQ5
+NDQsOTI4ODY0OTc2LDE3NTIwODQwOTUsLTY1NTY3ODA4LDY5MD
+c5OTM1MiwtMTMxMTg4MTk5Ml19
 -->
