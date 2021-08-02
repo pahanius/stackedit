@@ -191,6 +191,15 @@
 	Так как у нас есть массив Пиров с вьюхами, мы можем ими управлять, если приходит событие на удаление видео потока для конкретного пира.
 	
 #### Аудиопотоки
+
+1. Получаем локальный aelbjпоток в методе делегата и передаём ему View для отображения видео
+
+	```swift
+	func roomClient(roomClient: GCoreRoomClient, produceLocalVideoTrack videoTrack: RTCVideoTrack) {
+		videoTrack.add(localVideoView)
+	}
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMjQyNTI4MywtNjIzMjU4MTg0XX0=
+eyJoaXN0b3J5IjpbNTkxODI0NDEwLC04MzI0MjUyODMsLTYyMz
+I1ODE4NF19
 -->
