@@ -281,9 +281,9 @@ peer - новый юзер в комнате
 
 ### Работа в фоновом режиме
 
-На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу
+На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMzcwNjk3MywtMTY5OTkwNzY0MywtMT
-k0OTg3MzYsLTExOTE3NTQ5NDQsOTI4ODY0OTc2LDE3NTIwODQw
-OTUsLTY1NTY3ODA4LDY5MDc5OTM1MiwtMTMxMTg4MTk5Ml19
+eyJoaXN0b3J5IjpbNTMwMDAwMzQzLC0xNjk5OTA3NjQzLC0xOT
+Q5ODczNiwtMTE5MTc1NDk0NCw5Mjg4NjQ5NzYsMTc1MjA4NDA5
+NSwtNjU1Njc4MDgsNjkwNzk5MzUyLC0xMzExODgxOTkyXX0=
 -->
