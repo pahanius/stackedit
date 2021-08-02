@@ -2,9 +2,9 @@
 # Системные требования
 * Минимальная версия iOS: 12.1
 
-# Интеграция SDK
+# Интеграция Video calls SDK
 
-## Импорт SDK и настройка проекта
+## Импорт Video calls SDK и настройка проекта
 
 1. Создаём новый проект
 2. Устанавливаем зависимости Pod
@@ -20,7 +20,7 @@
 6. В **Build Settings** таргета устанавливаем `Validate Workspace = Yes`
 7. В **Info.plist** добавляем описание для параметров **NSCameraUsageDescription** и **NSMicrophoneUsageDescription**
 
-## Инициализация SDK
+## Инициализация Video calls SDK
 
 1. Импортируем зависимости
 
@@ -246,7 +246,7 @@
 	}
 	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTE3NTQ5NDQsOTI4ODY0OTc2LDE3NT
-IwODQwOTUsLTY1NTY3ODA4LDY5MDc5OTM1MiwtMTMxMTg4MTk5
-Ml19
+eyJoaXN0b3J5IjpbLTE5NDk4NzM2LC0xMTkxNzU0OTQ0LDkyOD
+g2NDk3NiwxNzUyMDg0MDk1LC02NTU2NzgwOCw2OTA3OTkzNTIs
+LTEzMTE4ODE5OTJdfQ==
 -->
