@@ -150,7 +150,19 @@
 
 #### Пиры (участники)
 
-1. При успешном коннекте, вызывается метод, который возвращает всех участников, находящихся в комнате, сохраняем их, рисуем 
+1. При успешном коннекте, вызывается метод, который возвращает всех участников, находящихся в комнате, сохраняем их, рисуем элементы для отображения участников
+
+```swift
+func joinWithPeersInRoom(_ peers: [PeerObject]) {
+	peers.forEach { peer in
+		peerConnectionsCount  +=  1
+		let remoteItem = GCLRemoteItem(peerObject: peer, sortId: peerConnectionsCount)
+		remoteItems.insert(remoteItem)
+		mainScrollView.addSubview(remoteItem.view)
+	}
+	view.setNeedsLayout()
+}
+```
 
 #### Видеопотоки
 
@@ -196,6 +208,6 @@
 	
 #### Аудиопотоки
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMzYxMjg1MiwyMDgwMzEwMzY5LC04Mz
-I0MjUyODMsLTYyMzI1ODE4NF19
+eyJoaXN0b3J5IjpbOTY5OTM5ODYyLDIwODAzMTAzNjksLTgzMj
+QyNTI4MywtNjIzMjU4MTg0XX0=
 -->
