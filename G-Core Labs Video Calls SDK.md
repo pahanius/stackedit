@@ -1,10 +1,10 @@
 
-## Системные требования
+# Системные требования
 * Минимальная версия iOS: 12.1
 
-## Интеграция SDK
+# Интеграция SDK
 
-### Добавление SDK
+## Добавление SDK
 
 1. Создаём новый проект
 2. Устанавливаем зависимости Pod
@@ -18,14 +18,14 @@
 	
 4. Копируем GCoreLabMeetSDK.framework в папку проекта
 
-### Импорт SDK и настройка проекта
+## Импорт SDK и настройка проекта
 
 1. Перетаскиваем `GCoreLabMeetSDK.framework` в папку проекта
 2. В таргете проекта в разделе **General -> Frameworks, Libraries, and Embedded Content** выставляем значение **Embed** на `Embed & Sign` для `GCoreLabMeetSDK.framework` 
 3. В **Build Settings** таргета устанавливаем `ENABLE_BITCODE = NO`
 4. В **Info.plist** добавляем описание для параметров **NSCameraUsageDescription** и **NSMicrophoneUsageDescription**
 
-### Инициализация SDK
+## Инициализация SDK
 
 1. Импортируем зависимости
 
@@ -251,5 +251,6 @@
 	}
 	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkwNzk5MzUyLC0xMzExODgxOTkyXX0=
+eyJoaXN0b3J5IjpbLTE4ODM2NTE5MjUsNjkwNzk5MzUyLC0xMz
+ExODgxOTkyXX0=
 -->
