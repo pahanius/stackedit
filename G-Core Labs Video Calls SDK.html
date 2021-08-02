@@ -9,12 +9,12 @@
 </head>
 
 <body class="stackedit">
-  <div class="stackedit__html"><h2 id="системные-требования">Системные требования</h2>
+  <div class="stackedit__html"><h1 id="системные-требования">Системные требования</h1>
 <ul>
 <li>Минимальная версия iOS: 12.1</li>
 </ul>
-<h2 id="интеграция-sdk">Интеграция SDK</h2>
-<h3 id="добавление-sdk">Добавление SDK</h3>
+<h1 id="интеграция-sdk">Интеграция SDK</h1>
+<h2 id="добавление-sdk">Добавление SDK</h2>
 <ol>
 <li>
 <p>Создаём новый проект</p>
@@ -31,14 +31,14 @@ pod <span class="token string">"mediasoup_ios_client"</span><span class="token p
 <p>Копируем GCoreLabMeetSDK.framework в папку проекта</p>
 </li>
 </ol>
-<h3 id="импорт-sdk-и-настройка-проекта">Импорт SDK и настройка проекта</h3>
+<h2 id="импорт-sdk-и-настройка-проекта">Импорт SDK и настройка проекта</h2>
 <ol>
 <li>Перетаскиваем <code>GCoreLabMeetSDK.framework</code> в папку проекта</li>
 <li>В таргете проекта в разделе <strong>General -&gt; Frameworks, Libraries, and Embedded Content</strong> выставляем значение <strong>Embed</strong> на <code>Embed &amp; Sign</code> для <code>GCoreLabMeetSDK.framework</code></li>
 <li>В <strong>Build Settings</strong> таргета устанавливаем <code>ENABLE_BITCODE = NO</code></li>
 <li>В <strong>Info.plist</strong> добавляем описание для параметров <strong>NSCameraUsageDescription</strong> и <strong>NSMicrophoneUsageDescription</strong></li>
 </ol>
-<h3 id="инициализация-sdk">Инициализация SDK</h3>
+<h2 id="инициализация-sdk">Инициализация SDK</h2>
 <ol>
 <li>
 <p>Импортируем зависимости</p>
@@ -150,8 +150,8 @@ client <span class="token operator">=</span> <span class="token function">GCoreR
 </code></pre>
 </li>
 </ol>
-<h3 id="взаимодействие-с-клиентским-приложением">Взаимодействие с клиентским приложением</h3>
-<h4 id="пиры-участники">Пиры (участники)</h4>
+<h2 id="взаимодействие-с-клиентским-приложением">Взаимодействие с клиентским приложением</h2>
+<h3 id="пиры-участники">Пиры (участники)</h3>
 <ol>
 <li>
 <p>При успешном коннекте, вызывается метод, который возвращает всех участников, находящихся в комнате, сохраняем их, рисуем элементы для отображения участников</p>
@@ -176,8 +176,6 @@ client <span class="token operator">=</span> <span class="token function">GCoreR
 </li>
 <li>
 <p>При отключении участника, удаляем его из массива</p>
-</li>
-</ol>
 <pre class=" language-swift"><code class="prism  language-swift"><span class="token keyword">func</span> <span class="token function">peerClosed</span><span class="token punctuation">(</span><span class="token number">_</span> peer<span class="token punctuation">:</span> <span class="token builtin">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 	<span class="token keyword">if</span> <span class="token keyword">let</span> remoteItem <span class="token operator">=</span> remoteItems<span class="token punctuation">.</span><span class="token function">first</span><span class="token punctuation">(</span><span class="token keyword">where</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> $<span class="token number">0</span><span class="token punctuation">.</span>peerId <span class="token operator">==</span> peer <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 		remoteItem<span class="token punctuation">.</span>view<span class="token punctuation">.</span><span class="token function">removeFromSuperview</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -185,7 +183,9 @@ client <span class="token operator">=</span> <span class="token function">GCoreR
 	<span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h4 id="видеопотоки">Видеопотоки</h4>
+</li>
+</ol>
+<h3 id="видеопотоки">Видеопотоки</h3>
 <ol>
 <li>
 <p>Создаём RTCEAGLVideoView для отображения видеопотоков</p>
@@ -219,7 +219,7 @@ client <span class="token operator">=</span> <span class="token function">GCoreR
 <p>Так как у нас есть массив Пиров с вьюхами, мы можем ими управлять, если приходит событие на удаление видео потока для конкретного пира.</p>
 </li>
 </ol>
-<h4 id="аудиопотоки">Аудиопотоки</h4>
+<h3 id="аудиопотоки">Аудиопотоки</h3>
 <ol>
 <li>
 <p>При изменении аудиопотока кого-то из участников (вкл/выкл микрофона), вызывается метод, в котором мы можем проверить состояние потока и отрисовать соответствующую иконку.</p>
@@ -231,7 +231,7 @@ client <span class="token operator">=</span> <span class="token function">GCoreR
 </code></pre>
 </li>
 </ol>
-<h4 id="прочие-события">Прочие события</h4>
+<h3 id="прочие-события">Прочие события</h3>
 <ol>
 <li>
 <p>Разговаривающие в данный момент участники</p>
