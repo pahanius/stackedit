@@ -246,11 +246,16 @@
 	}
 	```
 
-### Объекты
+### Классы
 
+
+
+| Параметр| Тип | Описание|
+|--|--|--|
+|  |  | |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MTcyNDU3MiwtMTk0OTg3MzYsLTExOT
-E3NTQ5NDQsOTI4ODY0OTc2LDE3NTIwODQwOTUsLTY1NTY3ODA4
-LDY5MDc5OTM1MiwtMTMxMTg4MTk5Ml19
+eyJoaXN0b3J5IjpbLTE4MjU0NDQ5NzQsLTE5NDk4NzM2LC0xMT
+kxNzU0OTQ0LDkyODg2NDk3NiwxNzUyMDg0MDk1LC02NTU2Nzgw
+OCw2OTA3OTkzNTIsLTEzMTE4ODE5OTJdfQ==
 -->
