@@ -279,11 +279,20 @@ peer - новый юзер в комнате
 
 ---
 
+### Типы ошибок
+
+***RoomError***
+|Тип  | Описание |
+|--|--|
+| invalidSocketURL | не верный URL для подключению к серверу |
+
+
 ### Работа в фоновом режиме
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMwMDAwMzQzLC0xNjk5OTA3NjQzLC0xOT
-Q5ODczNiwtMTE5MTc1NDk0NCw5Mjg4NjQ5NzYsMTc1MjA4NDA5
-NSwtNjU1Njc4MDgsNjkwNzk5MzUyLC0xMzExODgxOTkyXX0=
+eyJoaXN0b3J5IjpbODM3NjM5NTU2LDUzMDAwMDM0MywtMTY5OT
+kwNzY0MywtMTk0OTg3MzYsLTExOTE3NTQ5NDQsOTI4ODY0OTc2
+LDE3NTIwODQwOTUsLTY1NTY3ODA4LDY5MDc5OTM1MiwtMTMxMT
+g4MTk5Ml19
 -->
