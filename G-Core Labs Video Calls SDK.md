@@ -248,6 +248,8 @@
 
 ### Классы
 
+---
+
 ***PeerObject***
 
 peer - новый юзер в комнате
@@ -261,14 +263,21 @@ peer - новый юзер в комнате
 
 ***VideoObject***
 
-peer - новый юзер в комнате
-
 | Параметр| Тип | Описание|
 |--|--|--|
 | peerId | String | идентификатор юзера |
 |rtcVideoTrack | RTCVideoTrack | видеопоток 
+
+---
+
+***AudioObject***
+
+| Параметр| Тип | Описание|
+|--|--|--|
+| peerId | String | идентификатор юзера |
+|rtcAudioTrack | RTCAudioTrack | видеопоток 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NjYwNTA1MywtMTk0OTg3MzYsLTExOT
-E3NTQ5NDQsOTI4ODY0OTc2LDE3NTIwODQwOTUsLTY1NTY3ODA4
-LDY5MDc5OTM1MiwtMTMxMTg4MTk5Ml19
+eyJoaXN0b3J5IjpbLTE2OTk5MDc2NDMsLTE5NDk4NzM2LC0xMT
+kxNzU0OTQ0LDkyODg2NDk3NiwxNzUyMDg0MDk1LC02NTU2Nzgw
+OCw2OTA3OTkzNTIsLTEzMTE4ODE5OTJdfQ==
 -->
