@@ -276,8 +276,14 @@ peer - новый юзер в комнате
 |--|--|--|
 | peerId | String | идентификатор юзера |
 |rtcAudioTrack | RTCAudioTrack | видеопоток 
+
+---
+
+### Работа в фоновом режиме
+
+На данный момент работа в фоне или бэкграунде не поддерживается, подклю
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTk5MDc2NDMsLTE5NDk4NzM2LC0xMT
-kxNzU0OTQ0LDkyODg2NDk3NiwxNzUyMDg0MDk1LC02NTU2Nzgw
-OCw2OTA3OTkzNTIsLTEzMTE4ODE5OTJdfQ==
+eyJoaXN0b3J5IjpbMjE0MTY0NzEzNywtMTY5OTkwNzY0MywtMT
+k0OTg3MzYsLTExOTE3NTQ5NDQsOTI4ODY0OTc2LDE3NTIwODQw
+OTUsLTY1NTY3ODA4LDY5MDc5OTM1MiwtMTMxMTg4MTk5Ml19
 -->
