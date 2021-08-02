@@ -152,17 +152,20 @@
 
 1. При успешном коннекте, вызывается метод, который возвращает всех участников, находящихся в комнате, сохраняем их, рисуем элементы для отображения участников
 
-```swift
-func joinWithPeersInRoom(_ peers: [PeerObject]) {
-	peers.forEach { peer in
-		peerConnectionsCount  +=  1
-		let remoteItem = GCLRemoteItem(peerObject: peer, sortId: peerConnectionsCount)
-		remoteItems.insert(remoteItem)
-		mainScrollView.addSubview(remoteItem.view)
+	```swift
+	func joinWithPeersInRoom(_ peers: [PeerObject]) {
+		// Как пример, создание объекта пира и добавление нового вью в сетку ScrollView
+		peers.forEach { peer in
+			peerConnectionsCount  +=  1
+			let remoteItem = GCLRemoteItem(peerObject: peer, sortId: peerConnectionsCount)
+			remoteItems.insert(remoteItem)
+			mainScrollView.addSubview(remoteItem.view)
+		}
+		view.setNeedsLayout()
 	}
-	view.setNeedsLayout()
-}
-```
+	```
+
+2. При входе в комн
 
 #### Видеопотоки
 
@@ -208,6 +211,6 @@ func joinWithPeersInRoom(_ peers: [PeerObject]) {
 	
 #### Аудиопотоки
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY5OTM5ODYyLDIwODAzMTAzNjksLTgzMj
-QyNTI4MywtNjIzMjU4MTg0XX0=
+eyJoaXN0b3J5IjpbLTE4MjYzMTkzNzEsMjA4MDMxMDM2OSwtOD
+MyNDI1MjgzLC02MjMyNTgxODRdfQ==
 -->
