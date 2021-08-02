@@ -282,16 +282,24 @@ peer - новый юзер в комнате
 ### Типы ошибок
 
 ***RoomError***
+
+Возвращается в методе 
+
+```swift
+func  roomClientHandle(error: GCoreVideoCallsSDK.RoomError)
+```
+
 |Тип  | Описание |
 |--|--|
 | invalidSocketURL | не верный URL для подключению к серверу |
+| fatalError(Error) | в объекте `Error` приходит ошибка с сервера, можно посмотреть её description и определить в чём проблема
 
 
 ### Работа в фоновом режиме
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM3NjM5NTU2LDUzMDAwMDM0MywtMTY5OT
+eyJoaXN0b3J5IjpbODkyNjU1NDk3LDUzMDAwMDM0MywtMTY5OT
 kwNzY0MywtMTk0OTg3MzYsLTExOTE3NTQ5NDQsOTI4ODY0OTc2
 LDE3NTIwODQwOTUsLTY1NTY3ODA4LDY5MDc5OTM1MiwtMTMxMT
 g4MTk5Ml19
