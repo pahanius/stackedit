@@ -148,7 +148,7 @@
     
 ### Взаимодействие с клиентским приложением
 
-№№
+
 
 #### Видеопотоки
 
@@ -194,6 +194,6 @@
 	
 #### Аудиопотоки
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzE4Mzk1ODMsMTc5NTc1MzI5NywtOD
+eyJoaXN0b3J5IjpbMjA4MDMxMDM2OSwtMTQ3MTgzOTU4MywtOD
 MyNDI1MjgzLC02MjMyNTgxODRdfQ==
 -->
