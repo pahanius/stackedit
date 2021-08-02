@@ -150,7 +150,7 @@
 
 #### Пиры (участники)
 
-1. 
+1. При успешном коннекте, вызывается метод, который возвращает всех участников, находящихся в комнате, сохраняем их, рисуем 
 
 #### Видеопотоки
 
@@ -196,6 +196,6 @@
 	
 #### Аудиопотоки
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDI1ODYxMjcsMjA4MDMxMDM2OSwtOD
-MyNDI1MjgzLC02MjMyNTgxODRdfQ==
+eyJoaXN0b3J5IjpbLTYxMzYxMjg1MiwyMDgwMzEwMzY5LC04Mz
+I0MjUyODMsLTYyMzI1ODE4NF19
 -->
