@@ -11,8 +11,6 @@
 
 	**Podfile**
 	```ruby
-	pod 'Starscream', '~> 4.0.4'
-	pod 'SwiftyJSON', '~> 4.0'
 	pod "mediasoup_ios_client", '1.5.3'
 	```
 	
@@ -247,6 +245,6 @@
 	}
 	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MjA4NDA5NSwtNjU1Njc4MDgsNjkwNz
-k5MzUyLC0xMzExODgxOTkyXX0=
+eyJoaXN0b3J5IjpbOTI4ODY0OTc2LDE3NTIwODQwOTUsLTY1NT
+Y3ODA4LDY5MDc5OTM1MiwtMTMxMTg4MTk5Ml19
 -->
