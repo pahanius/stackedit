@@ -248,14 +248,15 @@
 
 ### Классы
 
-
+***PeerObject***
 
 | Параметр| Тип | Описание|
 |--|--|--|
-|  |  | |
+| id | String | идентификатор пира (новый юзер в комнате) |
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjU0NDQ5NzQsLTE5NDk4NzM2LC0xMT
-kxNzU0OTQ0LDkyODg2NDk3NiwxNzUyMDg0MDk1LC02NTU2Nzgw
-OCw2OTA3OTkzNTIsLTEzMTE4ODE5OTJdfQ==
+eyJoaXN0b3J5IjpbOTAyMTIxOTc2LC0xOTQ5ODczNiwtMTE5MT
+c1NDk0NCw5Mjg4NjQ5NzYsMTc1MjA4NDA5NSwtNjU1Njc4MDgs
+NjkwNzk5MzUyLC0xMzExODgxOTkyXX0=
 -->
