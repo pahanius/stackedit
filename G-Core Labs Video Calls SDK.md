@@ -227,7 +227,10 @@ func peerClosed(_ peer: String) {
 	Так как у нас есть массив Пиров с вьюхами, мы можем ими управлять, если приходит событие на удаление видео потока для конкретного пира.
 	
 #### Аудиопотоки
+
+1. При изменении аудиопотока кого-то из участников (Был выключен микрофон)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MTUwMjEwLC02NTEzMjA5OTAsMjA4MD
-MxMDM2OSwtODMyNDI1MjgzLC02MjMyNTgxODRdfQ==
+eyJoaXN0b3J5IjpbLTE0MTc2MDg3MDgsLTQ4MTUwMjEwLC02NT
+EzMjA5OTAsMjA4MDMxMDM2OSwtODMyNDI1MjgzLC02MjMyNTgx
+ODRdfQ==
 -->
