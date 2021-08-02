@@ -166,7 +166,14 @@
 
 2. При входе в комнату нового участника,  так же добавляем его в массив подключённых участников и на сетку ScrollView соответственно
 
-```swift
+	```swift
+	func handledPeer(_ peer: PeerObject) {
+		let remoteItem = GCLRemoteItem(peerObject: peer)
+		remoteItems.insert(remoteItem)
+		mainScrollView.addSubview(remoteItem.view)
+		view.setNeedsLayout()
+	}
+	```
 
 #### Видеопотоки
 
@@ -212,6 +219,6 @@
 	
 #### Аудиопотоки
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MTMyMDk5MCwxMDM2MjYxMjYzLDIwOD
+eyJoaXN0b3J5IjpbMTM0MTgxNTA1NSwtNjUxMzIwOTkwLDIwOD
 AzMTAzNjksLTgzMjQyNTI4MywtNjIzMjU4MTg0XX0=
 -->
