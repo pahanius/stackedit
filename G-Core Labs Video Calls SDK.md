@@ -166,7 +166,7 @@
 
 2. При входе в комнату нового участника,  так же добавляем его в массив подключённых участников и на сетку ScrollView соответственно
 
-```
+```swift
 
 #### Видеопотоки
 
@@ -212,6 +212,6 @@
 	
 #### Аудиопотоки
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjI2MTI2Myw2OTI4MTQxOTksMjA4MD
-MxMDM2OSwtODMyNDI1MjgzLC02MjMyNTgxODRdfQ==
+eyJoaXN0b3J5IjpbLTY1MTMyMDk5MCwxMDM2MjYxMjYzLDIwOD
+AzMTAzNjksLTgzMjQyNTI4MywtNjIzMjU4MTg0XX0=
 -->
