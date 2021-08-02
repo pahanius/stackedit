@@ -172,6 +172,7 @@
 		mainScrollView.addSubview(remoteItem.view)
 	}
 	```
+	
 3. При отключении участника, удаляем его из массива
 
 ```swift
@@ -227,6 +228,6 @@ func peerClosed(_ peer: String) {
 	
 #### Аудиопотоки
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUwNDA2MDU2LC02NTEzMjA5OTAsMjA4MD
+eyJoaXN0b3J5IjpbLTQ4MTUwMjEwLC02NTEzMjA5OTAsMjA4MD
 MxMDM2OSwtODMyNDI1MjgzLC02MjMyNTgxODRdfQ==
 -->
