@@ -156,8 +156,7 @@
 	func joinWithPeersInRoom(_ peers: [PeerObject]) {
 		// Как пример, создание объекта пира и добавление нового вью в сетку ScrollView
 		peers.forEach { peer in
-			peerConnectionsCount  +=  1
-			let remoteItem = GCLRemoteItem(peerObject: peer, sortId: peerConnectionsCount)
+			let remoteItem = GCLRemoteItem(peerObject: peer)
 			remoteItems.insert(remoteItem)
 			mainScrollView.addSubview(remoteItem.view)
 		}
@@ -165,7 +164,9 @@
 	}
 	```
 
-2. При входе в комнату н
+2. При входе в комнату нового участника,  так же добавляем его в массив подключённых участников и на сетку ScrollView соответственно
+
+```
 
 #### Видеопотоки
 
@@ -211,6 +212,6 @@
 	
 #### Аудиопотоки
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkyODE0MTk5LC0xODI2MzE5MzcxLDIwOD
-AzMTAzNjksLTgzMjQyNTI4MywtNjIzMjU4MTg0XX0=
+eyJoaXN0b3J5IjpbMTAzNjI2MTI2Myw2OTI4MTQxOTksMjA4MD
+MxMDM2OSwtODMyNDI1MjgzLC02MjMyNTgxODRdfQ==
 -->
