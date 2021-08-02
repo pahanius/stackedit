@@ -228,7 +228,7 @@ func peerClosed(_ peer: String) {
 	
 #### Аудиопотоки
 
-1. При изменении аудиопотока кого-то из участников (вкл/выкл ), вызывается метод, который возвращает аудиопоток конкретного участника. 
+1. При изменении аудиопотока кого-то из участников (вкл/выкл микроф), вызывается метод, который возвращает аудиопоток конкретного участника. 
 
 ```swift
 func audioDidChanged(_ audioObject: AudioObject) {
@@ -238,7 +238,7 @@ func audioDidChanged(_ audioObject: AudioObject) {
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTg2NzUzNjUsLTQ4MTUwMjEwLC02NT
-EzMjA5OTAsMjA4MDMxMDM2OSwtODMyNDI1MjgzLC02MjMyNTgx
-ODRdfQ==
+eyJoaXN0b3J5IjpbNjg0OTYzNDI3LC0xMDE4Njc1MzY1LC00OD
+E1MDIxMCwtNjUxMzIwOTkwLDIwODAzMTAzNjksLTgzMjQyNTI4
+MywtNjIzMjU4MTg0XX0=
 -->
