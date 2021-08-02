@@ -160,7 +160,6 @@
 			remoteItems.insert(remoteItem)
 			mainScrollView.addSubview(remoteItem.view)
 		}
-		view.setNeedsLayout()
 	}
 	```
 
@@ -171,9 +170,18 @@
 		let remoteItem = GCLRemoteItem(peerObject: peer)
 		remoteItems.insert(remoteItem)
 		mainScrollView.addSubview(remoteItem.view)
-		view.setNeedsLayout()
 	}
 	```
+3. При отключении участника, удаляем его из массива
+
+```swift
+func peerClosed(_ peer: String) {
+	if let remoteItem = remoteItems.first(where: { $0.peerId == peer }) {
+		remoteItem.view.removeFromSuperview()
+		remoteItems.remove(remoteItem)
+	}
+}
+```
 
 #### Видеопотоки
 
@@ -219,6 +227,6 @@
 	
 #### Аудиопотоки
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MTgxNTA1NSwtNjUxMzIwOTkwLDIwOD
-AzMTAzNjksLTgzMjQyNTI4MywtNjIzMjU4MTg0XX0=
+eyJoaXN0b3J5IjpbMjUwNDA2MDU2LC02NTEzMjA5OTAsMjA4MD
+MxMDM2OSwtODMyNDI1MjgzLC02MjMyNTgxODRdfQ==
 -->
