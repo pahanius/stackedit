@@ -174,14 +174,14 @@
 	
 3. При отключении участника, удаляем его из массива
 
-```swift
-func peerClosed(_ peer: String) {
-	if let remoteItem = remoteItems.first(where: { $0.peerId == peer }) {
-		remoteItem.view.removeFromSuperview()
-		remoteItems.remove(remoteItem)
+	```swift
+	func peerClosed(_ peer: String) {
+		if let remoteItem = remoteItems.first(where: { $0.peerId == peer }) {
+			remoteItem.view.removeFromSuperview()
+			remoteItems.remove(remoteItem)
+		}
 	}
-}
-```
+	```
 
 #### Видеопотоки
 
@@ -251,5 +251,5 @@ func peerClosed(_ peer: String) {
 	}
 	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTE4ODE5OTJdfQ==
+eyJoaXN0b3J5IjpbNjkwNzk5MzUyLC0xMzExODgxOTkyXX0=
 -->
