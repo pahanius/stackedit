@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>G-Core Labs Video Calls SDK</title>
+  <title>G-Core Labs Video Calls SDKWelcome file.1</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
 </head>
 
@@ -387,3 +387,6 @@ client <span class="token operator">=</span> <span class="token function">GCoreR
 </body>
 
 </html>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTI0MzcyNTg3XX0=
+-->
