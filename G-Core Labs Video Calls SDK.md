@@ -243,8 +243,16 @@ func peerClosed(_ peer: String) {
 1. Разговаривающие в данный момент участники
 	
 	Метод **activeSpeakerPeers(_ peers: [String])** возвращает идентификаторы активно говорящих пиров, таким образом мы можем отрисовать для конкретного участника соответствующую иконку
+
+	```swift
+	func activeSpeakerPeers(_ peers: [String]) {
+		remoteItems.forEach { item in
+			item.isSpeekingActive(peers.contains(item.peerId))
+		}
+	}
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTI0MDYxMTAsMTUzODU0NjY4NSwtND
+eyJoaXN0b3J5IjpbLTE3ODE3MjQwMjIsMTUzODU0NjY4NSwtND
 gxNTAyMTAsLTY1MTMyMDk5MCwyMDgwMzEwMzY5LC04MzI0MjUy
 ODMsLTYyMzI1ODE4NF19
 -->
