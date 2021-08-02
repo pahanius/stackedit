@@ -148,6 +148,8 @@
     
 ### Взаимодействие с клиентским приложением
 
+№№
+
 #### Видеопотоки
 
 1. Создаём RTCEAGLVideoView для отображения видеопотоков
@@ -191,15 +193,7 @@
 	Так как у нас есть массив Пиров с вьюхами, мы можем ими управлять, если приходит событие на удаление видео потока для конкретного пира.
 	
 #### Аудиопотоки
-
-1. Получаем локальный аудиопоток в методе делегата и передаём ему View для отображения видео
-
-	```swift
-	func roomClient(roomClient: GCoreRoomClient, produceLocalVideoTrack videoTrack: RTCVideoTrack) {
-		videoTrack.add(localVideoView)
-	}
-	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NTc1MzI5Nyw1OTE4MjQ0MTAsLTgzMj
-QyNTI4MywtNjIzMjU4MTg0XX0=
+eyJoaXN0b3J5IjpbLTE0NzE4Mzk1ODMsMTc5NTc1MzI5NywtOD
+MyNDI1MjgzLC02MjMyNTgxODRdfQ==
 -->
