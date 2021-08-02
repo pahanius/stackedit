@@ -4,7 +4,7 @@
 
 # Интеграция SDK
 
-## Добавление SDK
+## Импорт SDK и настройка проекта
 
 1. Создаём новый проект
 2. Устанавливаем зависимости Pod
@@ -16,14 +16,10 @@
 	pod "mediasoup_ios_client", '1.5.3'
 	```
 	
-4. Копируем GCoreLabMeetSDK.framework в папку проекта
-
-## Импорт SDK и настройка проекта
-
-1. Перетаскиваем `GCoreLabMeetSDK.framework` в папку проекта
-2. В таргете проекта в разделе **General -> Frameworks, Libraries, and Embedded Content** выставляем значение **Embed** на `Embed & Sign` для `GCoreLabMeetSDK.framework` 
-3. В **Build Settings** таргета устанавливаем `ENABLE_BITCODE = NO`
-4. В **Info.plist** добавляем описание для параметров **NSCameraUsageDescription** и **NSMicrophoneUsageDescription**
+3. Копируем `GCoreLabMeetSDK.framework` в папку проекта
+4. В таргете проекта в разделе **General -> Frameworks, Libraries, and Embedded Content** выставляем значение **Embed** на `Embed & Sign` для `GCoreLabMeetSDK.framework` 
+5. В **Build Settings** таргета устанавливаем `ENABLE_BITCODE = NO`
+6. В **Info.plist** добавляем описание для параметров **NSCameraUsageDescription** и **NSMicrophoneUsageDescription**
 
 ## Инициализация SDK
 
@@ -251,6 +247,6 @@
 	}
 	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NTY3ODA4LDY5MDc5OTM1MiwtMTMxMT
-g4MTk5Ml19
+eyJoaXN0b3J5IjpbMTc1MjA4NDA5NSwtNjU1Njc4MDgsNjkwNz
+k5MzUyLC0xMzExODgxOTkyXX0=
 -->
