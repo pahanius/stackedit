@@ -17,7 +17,8 @@
 3. Копируем `GCoreLabMeetSDK.framework` в папку проекта
 4. В таргете проекта в разделе **General -> Frameworks, Libraries, and Embedded Content** выставляем значение **Embed** на `Embed & Sign` для `GCoreLabMeetSDK.framework` 
 5. В **Build Settings** таргета устанавливаем `ENABLE_BITCODE = NO`
-6. В **Info.plist** добавляем описание для параметров **NSCameraUsageDescription** и **NSMicrophoneUsageDescription**
+6. В **Build Settings** таргета устанавливаем `Validate Workspace = Yes`
+7. В **Info.plist** добавляем описание для параметров **NSCameraUsageDescription** и **NSMicrophoneUsageDescription**
 
 ## Инициализация SDK
 
@@ -245,6 +246,7 @@
 	}
 	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI4ODY0OTc2LDE3NTIwODQwOTUsLTY1NT
-Y3ODA4LDY5MDc5OTM1MiwtMTMxMTg4MTk5Ml19
+eyJoaXN0b3J5IjpbLTE1OTA2MzM0NCw5Mjg4NjQ5NzYsMTc1Mj
+A4NDA5NSwtNjU1Njc4MDgsNjkwNzk5MzUyLC0xMzExODgxOTky
+XX0=
 -->
