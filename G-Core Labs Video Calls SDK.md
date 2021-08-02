@@ -165,7 +165,7 @@
 	}
 	```
 
-2. При входе в комн
+2. При входе в комнату н
 
 #### Видеопотоки
 
@@ -211,6 +211,6 @@
 	
 #### Аудиопотоки
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjYzMTkzNzEsMjA4MDMxMDM2OSwtOD
-MyNDI1MjgzLC02MjMyNTgxODRdfQ==
+eyJoaXN0b3J5IjpbNjkyODE0MTk5LC0xODI2MzE5MzcxLDIwOD
+AzMTAzNjksLTgzMjQyNTI4MywtNjIzMjU4MTg0XX0=
 -->
