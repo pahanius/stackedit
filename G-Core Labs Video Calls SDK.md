@@ -148,7 +148,9 @@
     
 ### Взаимодействие с клиентским приложением
 
+#### Пиры (участники)
 
+1. 
 
 #### Видеопотоки
 
@@ -194,6 +196,6 @@
 	
 #### Аудиопотоки
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MDMxMDM2OSwtMTQ3MTgzOTU4MywtOD
+eyJoaXN0b3J5IjpbLTEyNDI1ODYxMjcsMjA4MDMxMDM2OSwtOD
 MyNDI1MjgzLC02MjMyNTgxODRdfQ==
 -->
