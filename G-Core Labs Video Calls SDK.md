@@ -248,7 +248,7 @@
 
 ## Классы
 
-***PeerObject***
+***`PeerObject`å***
 
 peer - новый юзер в комнате
 
@@ -259,7 +259,7 @@ peer - новый юзер в комнате
 
 ---
 
-***VideoObject***
+***`VideoObject`***
 
 | Параметр| Тип | Описание|
 |--|--|--|
@@ -268,7 +268,7 @@ peer - новый юзер в комнате
 
 ---
 
-***AudioObject***
+***`AudioObject`***
 
 | Параметр| Тип | Описание|
 |--|--|--|
@@ -277,7 +277,7 @@ peer - новый юзер в комнате
 
 ## Типы ошибок
 
-***RoomError***
+***`RoomError`***
 
 Возвращается в методе 
 
@@ -295,8 +295,8 @@ func  roomClientHandle(error: GCoreVideoCallsSDK.RoomError)
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODAwOTAwNjgsODkyNjU1NDk3LDUzMD
-AwMDM0MywtMTY5OTkwNzY0MywtMTk0OTg3MzYsLTExOTE3NTQ5
-NDQsOTI4ODY0OTc2LDE3NTIwODQwOTUsLTY1NTY3ODA4LDY5MD
-c5OTM1MiwtMTMxMTg4MTk5Ml19
+eyJoaXN0b3J5IjpbODE4Mzg3MjU5LDg5MjY1NTQ5Nyw1MzAwMD
+AzNDMsLTE2OTk5MDc2NDMsLTE5NDk4NzM2LC0xMTkxNzU0OTQ0
+LDkyODg2NDk3NiwxNzUyMDg0MDk1LC02NTU2NzgwOCw2OTA3OT
+kzNTIsLTEzMTE4ODE5OTJdfQ==
 -->
