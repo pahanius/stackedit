@@ -14,8 +14,8 @@
 	pod "mediasoup_ios_client", '1.5.3'
 	```
 	
-3. Копируем `GCoreLabMeetSDK.framework` в папку проекта
-4. В таргете проекта в разделе **General -> Frameworks, Libraries, and Embedded Content** выставляем значение **Embed** на `Embed & Sign` для `GCoreLabMeetSDK.framework` 
+3. Копируем `GCoreVideoCallsSDK.framework` в папку проекта
+4. В таргете проекта в разделе **General -> Frameworks, Libraries, and Embedded Content** выставляем значение **Embed** на `Embed & Sign` для `GCoreVideoCallsSDK.framework` 
 5. В **Build Settings** таргета устанавливаем `ENABLE_BITCODE = NO`
 6. В **Build Settings** таргета устанавливаем `Validate Workspace = Yes`
 7. В **Info.plist** добавляем описание для параметров **NSCameraUsageDescription** и **NSMicrophoneUsageDescription**
@@ -25,7 +25,7 @@
 1. Импортируем зависимости
 
 	```swift
-	import GCoreLabMeetSDK
+	import GCoreVideoCallsSDK
 	import WebRTC
 	```	
 	
@@ -246,7 +246,7 @@
 	}
 	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTA2MzM0NCw5Mjg4NjQ5NzYsMTc1Mj
-A4NDA5NSwtNjU1Njc4MDgsNjkwNzk5MzUyLC0xMzExODgxOTky
-XX0=
+eyJoaXN0b3J5IjpbLTExOTE3NTQ5NDQsOTI4ODY0OTc2LDE3NT
+IwODQwOTUsLTY1NTY3ODA4LDY5MDc5OTM1MiwtMTMxMTg4MTk5
+Ml19
 -->
