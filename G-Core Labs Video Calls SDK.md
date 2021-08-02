@@ -192,7 +192,7 @@
 	
 #### Аудиопотоки
 
-1. Получаем локальный aelbjпоток в методе делегата и передаём ему View для отображения видео
+1. Получаем локальный аудиопоток в методе делегата и передаём ему View для отображения видео
 
 	```swift
 	func roomClient(roomClient: GCoreRoomClient, produceLocalVideoTrack videoTrack: RTCVideoTrack) {
@@ -200,6 +200,6 @@
 	}
 	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkxODI0NDEwLC04MzI0MjUyODMsLTYyMz
-I1ODE4NF19
+eyJoaXN0b3J5IjpbMTc5NTc1MzI5Nyw1OTE4MjQ0MTAsLTgzMj
+QyNTI4MywtNjIzMjU4MTg0XX0=
 -->
