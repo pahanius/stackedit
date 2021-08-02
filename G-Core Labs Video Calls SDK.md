@@ -257,6 +257,8 @@ peer - новый юзер в комнате
 | id | String | идентификатор юзера |
 |displayName | String? | имя юзера 
 
+---
+
 ***VideoObject***
 
 peer - новый юзер в комнате
@@ -264,9 +266,9 @@ peer - новый юзер в комнате
 | Параметр| Тип | Описание|
 |--|--|--|
 | peerId | String | идентификатор юзера |
-|rtcVideoTrack | RTCVideoTrack | rtc видеопоток 
+|rtcVideoTrack | RTCVideoTrack | видеопоток 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY1OTkwMDk1LC0xOTQ5ODczNiwtMTE5MT
-c1NDk0NCw5Mjg4NjQ5NzYsMTc1MjA4NDA5NSwtNjU1Njc4MDgs
-NjkwNzk5MzUyLC0xMzExODgxOTkyXX0=
+eyJoaXN0b3J5IjpbMTM1NjYwNTA1MywtMTk0OTg3MzYsLTExOT
+E3NTQ5NDQsOTI4ODY0OTc2LDE3NTIwODQwOTUsLTY1NTY3ODA4
+LDY5MDc5OTM1MiwtMTMxMTg4MTk5Ml19
 -->
