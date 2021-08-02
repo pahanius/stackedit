@@ -240,9 +240,9 @@ func peerClosed(_ peer: String) {
 
 #### Прочие события
 
-1. Чтоб
+1. Чтобы ото
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU2NTc3ODEwLDY4NDk2MzQyNywtNDgxNT
-AyMTAsLTY1MTMyMDk5MCwyMDgwMzEwMzY5LC04MzI0MjUyODMs
-LTYyMzI1ODE4NF19
+eyJoaXN0b3J5IjpbMTUzODU0NjY4NSwzNTY1Nzc4MTAsLTQ4MT
+UwMjEwLC02NTEzMjA5OTAsMjA4MDMxMDM2OSwtODMyNDI1Mjgz
+LC02MjMyNTgxODRdfQ==
 -->
