@@ -228,9 +228,17 @@ func peerClosed(_ peer: String) {
 	
 #### Аудиопотоки
 
-1. При изменении аудиопотока кого-то из участников (Был выключен микрофон)
+1. При изменении аудиопотока кого-то из участников (вкл/выкл ), вызывается метод, который возвращает аудиопоток конкретного участника. 
+
+```swift
+func audioDidChanged(_ audioObject: AudioObject) {
+	if let remoteItem = remoteItems.first(where: { $0.peerId == audioObject.peerId }) {
+		remoteItem.isEnableAudio(audioObject.rtcAudioTrack.isEnabled)
+	}
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTc2MDg3MDgsLTQ4MTUwMjEwLC02NT
+eyJoaXN0b3J5IjpbLTEwMTg2NzUzNjUsLTQ4MTUwMjEwLC02NT
 EzMjA5OTAsMjA4MDMxMDM2OSwtODMyNDI1MjgzLC02MjMyNTgx
 ODRdfQ==
 -->
