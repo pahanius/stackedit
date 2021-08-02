@@ -228,7 +228,7 @@ func peerClosed(_ peer: String) {
 	
 #### Аудиопотоки
 
-1. При изменении аудиопотока кого-то из участников (вкл/выкл микрофона), вызывается метод, в котором мы можем проверить состояние потока и отрисовать соотвествующую иконку.
+1. При изменении аудиопотока кого-то из участников (вкл/выкл микрофона), вызывается метод, в котором мы можем проверить состояние потока и отрисовать соответствующую иконку.
 
 	```swift
 	func audioDidChanged(_ audioObject: AudioObject) {
@@ -242,9 +242,9 @@ func peerClosed(_ peer: String) {
 
 1. Разговаривающие в данный момент участники
 	
-	в методе 
+	Метод **activeSpeakerPeers(_ peers: [String])** возвращает идентификаторы активно говорящих пиров, таким образом мы можем отрисовать для конкретного участника соответствующую иконку
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxOTg3NTM4OCwxNTM4NTQ2Njg1LC00OD
-E1MDIxMCwtNjUxMzIwOTkwLDIwODAzMTAzNjksLTgzMjQyNTI4
-MywtNjIzMjU4MTg0XX0=
+eyJoaXN0b3J5IjpbLTE4NTI0MDYxMTAsMTUzODU0NjY4NSwtND
+gxNTAyMTAsLTY1MTMyMDk5MCwyMDgwMzEwMzY5LC04MzI0MjUy
+ODMsLTYyMzI1ODE4NF19
 -->
