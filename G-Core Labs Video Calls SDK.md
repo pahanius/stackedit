@@ -75,11 +75,20 @@
 7. Подписываемся на методы делегата `RoomListener`
 
 	```swift
-    func roomClientHandle(error: RoomError)
-    func roomClientDidConnected()
-    func roomClientReconnecting()
-    func roomClientReconnectingFailed()
-    func roomClientSocketDidDisconnected(roomClient: GCoreRoomClient)
+	///  Получена ошибка
+	func  roomClientHandle(error: RoomError)
+
+	///  Успешное соединение с серверу
+	func  roomClientDidConnected()
+
+	///  Переподключение к серверу
+	func  roomClientReconnecting()
+
+	///  Неудачное переподключение к серверу
+	func  roomClientReconnectingFailed()
+
+	///  Соединение с сервером разорвано
+	func  roomClientSocketDidDisconnected(roomClient: GCoreRoomClient)
     
     /// Возвращает пиры, находящиеся в комнате в момент входа
     func roomClient(roomClient: GCoreRoomClient, joinWithPeersInRoom peers: [PeerObject])
@@ -298,7 +307,7 @@ func  roomClientHandle(error: GCoreVideoCallsSDK.RoomError)
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjc2NDM0MDcsLTE0Mjc2NDM0MDcsLT
+eyJoaXN0b3J5IjpbLTE0MjQwNzM4MzAsLTE0Mjc2NDM0MDcsLT
 E4ODkxODc4ODcsNTMxNDE3ODEwLDg5MjY1NTQ5Nyw1MzAwMDAz
 NDMsLTE2OTk5MDc2NDMsLTE5NDk4NzM2LC0xMTkxNzU0OTQ0LD
 kyODg2NDk3NiwxNzUyMDg0MDk1LC02NTU2NzgwOCw2OTA3OTkz
