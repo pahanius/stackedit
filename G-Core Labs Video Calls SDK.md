@@ -42,12 +42,9 @@
 	
 	let parameters = MeetRoomParametrs(
 	    roomId: "serv01234",
-	    displayName: "Рыыжий котэ",
-	    accessToken: "",
-	    webrtcWebsocketHost: "webrtc1.youstreamer.com",
-	    apiHost: "",
-	    host: "https://meet.gcorelabs.com",
-	    path: ""
+	    displayName: "John Snow",
+	    peerId: "user09876",
+	    clientHostName: "studio.gvideo.co"
 	)
 	```
 	
@@ -295,8 +292,8 @@ func  roomClientHandle(error: GCoreVideoCallsSDK.RoomError)
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MTI3OTM4Myw1MzE0MTc4MTAsODkyNj
-U1NDk3LDUzMDAwMDM0MywtMTY5OTkwNzY0MywtMTk0OTg3MzYs
-LTExOTE3NTQ5NDQsOTI4ODY0OTc2LDE3NTIwODQwOTUsLTY1NT
-Y3ODA4LDY5MDc5OTM1MiwtMTMxMTg4MTk5Ml19
+eyJoaXN0b3J5IjpbLTE0NDEyMzI1MjUsNTMxNDE3ODEwLDg5Mj
+Y1NTQ5Nyw1MzAwMDAzNDMsLTE2OTk5MDc2NDMsLTE5NDk4NzM2
+LC0xMTkxNzU0OTQ0LDkyODg2NDk3NiwxNzUyMDg0MDk1LC02NT
+U2NzgwOCw2OTA3OTkzNTIsLTEzMTE4ODE5OTJdfQ==
 -->
