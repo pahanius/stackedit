@@ -30,6 +30,7 @@
 	```	
 	
 3. Активируем логирование
+
 	Вывод запросов на сервер и ответы сервера
 	```swift
 	GCoreRoomLogger.activateLogger()
@@ -307,9 +308,10 @@ func  roomClientHandle(error: GCoreVideoCallsSDK.RoomError)
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MjgzMzc0MiwtMjE3NjUwNjU1LC0xND
-I3NjQzNDA3LC0xODg5MTg3ODg3LDUzMTQxNzgxMCw4OTI2NTU0
-OTcsNTMwMDAwMzQzLC0xNjk5OTA3NjQzLC0xOTQ5ODczNiwtMT
-E5MTc1NDk0NCw5Mjg4NjQ5NzYsMTc1MjA4NDA5NSwtNjU1Njc4
-MDgsNjkwNzk5MzUyLC0xMzExODgxOTkyXX0=
+eyJoaXN0b3J5IjpbLTE5ODA1NjM3NDQsMTE4MjgzMzc0MiwtMj
+E3NjUwNjU1LC0xNDI3NjQzNDA3LC0xODg5MTg3ODg3LDUzMTQx
+NzgxMCw4OTI2NTU0OTcsNTMwMDAwMzQzLC0xNjk5OTA3NjQzLC
+0xOTQ5ODczNiwtMTE5MTc1NDk0NCw5Mjg4NjQ5NzYsMTc1MjA4
+NDA5NSwtNjU1Njc4MDgsNjkwNzk5MzUyLC0xMzExODgxOTkyXX
+0=
 -->
