@@ -52,7 +52,7 @@
 | roomId | String | Room ID to connect to |
 |displayName | String | Set display name of participant<br>[Link for extra details in knowledge base](https://gcorelabs.com/support/articles/4404682043665/#h_01FBPQAEZZ1GR7SF7G7TBAYJWZ)|
 | peerId | String? (optional) | ID of a participant from your internal system. Please specify userID if you have your own. Or just leave this field blank, then the value will be generated automatically.<br>[Link for extra details in knowledge base](**[https://gcorelabs.com/support/articles/4404682043665/#h_01FBPQC18B1E3K58C05A8E81Y7](https://gcorelabs.com/support/articles/4404682043665/#h_01FBPQC18B1E3K58C05A8E81Y7)**) |
-| clientHostName | String? (optional) | в данном параметре клиент передает то доменное имя, которое он использует для эксплуатации веб версии мита. Значение: только домен без указания протокола.<br>Example: clientHostName: "meet.gcore.lu"|
+| clientHostName | String? (optional) | В данном параметре клиент передает то доменное имя, которое он использует для эксплуатации веб версии мита. Значение: только домен без указания протокола.<br>Example: clientHostName: "meet.gcore.lu"|
 	
 5. Создаём экземпляр объекта клиента и конектимся
 
@@ -298,8 +298,9 @@ func  roomClientHandle(error: GCoreVideoCallsSDK.RoomError)
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODkxODc4ODcsNTMxNDE3ODEwLDg5Mj
-Y1NTQ5Nyw1MzAwMDAzNDMsLTE2OTk5MDc2NDMsLTE5NDk4NzM2
-LC0xMTkxNzU0OTQ0LDkyODg2NDk3NiwxNzUyMDg0MDk1LC02NT
-U2NzgwOCw2OTA3OTkzNTIsLTEzMTE4ODE5OTJdfQ==
+eyJoaXN0b3J5IjpbLTE0Mjc2NDM0MDcsLTE4ODkxODc4ODcsNT
+MxNDE3ODEwLDg5MjY1NTQ5Nyw1MzAwMDAzNDMsLTE2OTk5MDc2
+NDMsLTE5NDk4NzM2LC0xMTkxNzU0OTQ0LDkyODg2NDk3NiwxNz
+UyMDg0MDk1LC02NTU2NzgwOCw2OTA3OTkzNTIsLTEzMTE4ODE5
+OTJdfQ==
 -->
