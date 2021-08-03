@@ -47,6 +47,10 @@
 	    clientHostName: "studio.gvideo.co"
 	)
 	```
+| Параметр| Тип | Описание|
+|--|--|--|
+| roomId | String | Room ID to connect to |
+|displayName | String | видеопоток 
 	
 5. Создаём экземпляр объекта клиента и конектимся
 
@@ -292,8 +296,8 @@ func  roomClientHandle(error: GCoreVideoCallsSDK.RoomError)
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDEyMzI1MjUsNTMxNDE3ODEwLDg5Mj
-Y1NTQ5Nyw1MzAwMDAzNDMsLTE2OTk5MDc2NDMsLTE5NDk4NzM2
-LC0xMTkxNzU0OTQ0LDkyODg2NDk3NiwxNzUyMDg0MDk1LC02NT
-U2NzgwOCw2OTA3OTkzNTIsLTEzMTE4ODE5OTJdfQ==
+eyJoaXN0b3J5IjpbNDQ3MDQzMTk5LDUzMTQxNzgxMCw4OTI2NT
+U0OTcsNTMwMDAwMzQzLC0xNjk5OTA3NjQzLC0xOTQ5ODczNiwt
+MTE5MTc1NDk0NCw5Mjg4NjQ5NzYsMTc1MjA4NDA5NSwtNjU1Nj
+c4MDgsNjkwNzk5MzUyLC0xMzExODgxOTkyXX0=
 -->
