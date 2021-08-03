@@ -51,7 +51,7 @@
 |--|--|--|
 | roomId | String | Room ID to connect to |
 |displayName | String | Set display name of participant<br>[Link for extra details in knowledge base](https://gcorelabs.com/support/articles/4404682043665/#h_01FBPQAEZZ1GR7SF7G7TBAYJWZ)|
-| peerId | String? (optional) | ID of a participant from your internal system. Please specify userID if you have your own. Or just leave this field blank, then the value will be generated automatically.<br>[Link for extra details in knowledge base](**[https://gcorelabs.com/support/articles/4404682043665/#h_01FBPQC18B1E3K58C05A8E81Y7](https://gcorelabs.com/support/articles/4404682043665/#h_01FBPQC18B1E3K58C05A8E81Y7)**) |
+| peerId | String? (optional) | ID of a participant from your internal system. Please specify userID if you have your own. Or just leave this field blank, then the value will be generated automatically.<br>[Link for extra details in knowledge base](https://gcorelabs.com/support/articles/4404682043665/#h_01FBPQC18B1E3K58C05A8E81Y7)(https://gcorelabs.com/support/articles/4404682043665/#h_01FBPQC18B1E3K58C05A8E81Y7) |
 | clientHostName | String? (optional) | В данном параметре клиент передает то доменное имя, которое он использует для эксплуатации веб версии мита. Значение: только домен без указания протокола.<br>Example: clientHostName: "meet.gcore.lu"|
 	
 5. Создаём экземпляр объекта клиента и конектимся
@@ -307,9 +307,9 @@ func  roomClientHandle(error: GCoreVideoCallsSDK.RoomError)
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNzY1MDY1NSwtMTQyNzY0MzQwNywtMT
-g4OTE4Nzg4Nyw1MzE0MTc4MTAsODkyNjU1NDk3LDUzMDAwMDM0
-MywtMTY5OTkwNzY0MywtMTk0OTg3MzYsLTExOTE3NTQ5NDQsOT
-I4ODY0OTc2LDE3NTIwODQwOTUsLTY1NTY3ODA4LDY5MDc5OTM1
-MiwtMTMxMTg4MTk5Ml19
+eyJoaXN0b3J5IjpbLTEzMjkyMjM2NjcsLTIxNzY1MDY1NSwtMT
+QyNzY0MzQwNywtMTg4OTE4Nzg4Nyw1MzE0MTc4MTAsODkyNjU1
+NDk3LDUzMDAwMDM0MywtMTY5OTkwNzY0MywtMTk0OTg3MzYsLT
+ExOTE3NTQ5NDQsOTI4ODY0OTc2LDE3NTIwODQwOTUsLTY1NTY3
+ODA4LDY5MDc5OTM1MiwtMTMxMTg4MTk5Ml19
 -->
