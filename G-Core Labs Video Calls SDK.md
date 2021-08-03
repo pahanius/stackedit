@@ -75,98 +75,59 @@
 7. Подписываемся на методы делегата `RoomListener`
 
 	```swift
-    ///  Получена ошибка
-	func  roomClientHandle(error: RoomError)
+    func roomClientHandle(error: RoomError)
+    func roomClientDidConnected()
+    func roomClientReconnecting()
+    func roomClientReconnectingFailed()
+    func roomClientSocketDidDisconnected(roomClient: GCoreRoomClient)
+    
+    /// Возвращает пиры, находящиеся в комнате в момент входа
+    func roomClient(roomClient: GCoreRoomClient, joinWithPeersInRoom peers: [PeerObject])
+    
+    /// Пир вошёл в комнату
+    func roomClient(roomClient: GCoreRoomClient, handlePeer: PeerObject)
+    
+    /// Пир вышел из комнаты
+    func roomClient(roomClient: GCoreRoomClient, peerClosed: String)
+    
+    // Локальный пир
+    /// Локальный видеопоток получен
+    func roomClient(roomClient: GCoreRoomClient, produceLocalVideoTrack videoTrack: RTCVideoTrack)
+    
+    /// Локальный аудиопоток получен
+    func roomClient(roomClient: GCoreRoomClient, produceLocalAudioTrack audioTrack: RTCAudioTrack)
+    
+    /// Был закрыт локальный видеопоток
+    func roomClient(roomClient: GCoreRoomClient, didCloseLocalVideoTrack videoTrack: RTCVideoTrack?)
+    
+    /// Был закрыт локальный аудиопоток
+    func roomClient(roomClient: GCoreRoomClient, didCloseLocalAudioTrack audioTrack: RTCAudioTrack?)
 
-///  Успешное соединение с серверу
-
-func  roomClientDidConnected()
-
-///  Переподключение к серверу
-
-func  roomClientReconnecting()
-
-///  Неудачное переподключение к серверу
-
-func  roomClientReconnectingFailed()
-
-///  Соединение с сервером разорвано
-
-func  roomClientSocketDidDisconnected(roomClient: GCoreRoomClient)
-
-///  Возвращает пиры, находящиеся в комнате в момент входа
-
-func roomClient(roomClient: GCoreRoomClient, joinWithPeersInRoom peers: [PeerObject])
-
-///  Пир вошёл в комнату
-
-func roomClient(roomClient: GCoreRoomClient, handlePeer: PeerObject)
-
-///  Пир вышел из комнаты
-
-func roomClient(roomClient: GCoreRoomClient, peerClosed: String)
-
-// Локальный пир
-
-///  Локальный видеопоток получен
-
-func roomClient(roomClient: GCoreRoomClient, produceLocalVideoTrack videoTrack: RTCVideoTrack)
-
-///  Локальный аудиопоток получен
-
-func roomClient(roomClient: GCoreRoomClient, produceLocalAudioTrack audioTrack: RTCAudioTrack)
-
-///  Был закрыт локальный видеопоток
-
-func roomClient(roomClient: GCoreRoomClient, didCloseLocalVideoTrack videoTrack: RTCVideoTrack?)
-
-///  Был закрыт локальный аудиопоток
-
-func roomClient(roomClient: GCoreRoomClient, didCloseLocalAudioTrack audioTrack: RTCAudioTrack?)
-
-  
-
-// Внешние пиры
-
-///  Получен внешний видеопоток
-
-func roomClient(roomClient: GCoreRoomClient, handledRemoteVideo videoObject: VideoObject)
-
-/**
-
-Внешний ведопоток был закрыт
-
-- parameter  byModerator Если пир вышел не сам, а его закрыл модератор
-
-*/
-
-func roomClient(roomClient: GCoreRoomClient, didCloseRemoteVideoByModerator byModerator: Bool, videoObject: VideoObject)
-
-///  Получен внешний аудиопоток
-
-func roomClient(roomClient: GCoreRoomClient, produceRemoteAudio audioObject: AudioObject)
-
-/**
-
-Внешний аудиопоток был закрыт
-
-- parameter  byModerator Если пир вышел не сам, а его закрыл модератор
-
-*/
-
-func roomClient(roomClient: GCoreRoomClient, didCloseRemoteAudioByModerator byModerator: Bool, audioObject: AudioObject)
-
-/**
-
-В массиве приходит пир с активным микрофоном. Микрофон пира считается активным до тех пор
-
-пока не будет вызван этот же метод, в массиве которого не будет соответствующего пира
-
-- parameter  peers массив Id у которых активен микрофон
-
-*/
-
-func roomClient(roomClient: GCoreRoomClient, activeSpeakerPeers peers: [String])
+    // Внешние пиры
+    /// Получен внешний видеопоток
+    func roomClient(roomClient: GCoreRoomClient, handledRemoteVideo videoObject: VideoObject)
+    
+    /**
+     Внешний ведопоток был закрыт
+     - parameter byModerator Если пир вышел не сам, а его закрыл модератор
+     */
+    func roomClient(roomClient: GCoreRoomClient, didCloseRemoteVideoByModerator byModerator: Bool, videoObject: VideoObject)
+    
+    /// Получен внешний аудиопоток
+    func roomClient(roomClient: GCoreRoomClient, produceRemoteAudio audioObject: AudioObject)
+    
+    /**
+     Внешний аудиопоток был закрыт
+     - parameter byModerator Если пир вышел не сам, а его закрыл модератор
+     */
+    func roomClient(roomClient: GCoreRoomClient, didCloseRemoteAudioByModerator byModerator: Bool, audioObject: AudioObject)
+    
+    /**
+     В массиве приходит пир с активным микрофоном. Микрофон пира считается активным до тех пор
+     пока не будет вызван этот же метод, в массиве которого не будет соответствующего пира
+     - parameter peers массив Id у которых активен микрофон
+     */
+    func roomClient(roomClient: GCoreRoomClient, activeSpeakerPeers peers: [String])
     ```
     
 8. Рекомендуемые надстройки после успешного подключения
@@ -337,9 +298,9 @@ func  roomClientHandle(error: GCoreVideoCallsSDK.RoomError)
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNjUwMTMyMCwtMTQyNzY0MzQwNywtMT
-g4OTE4Nzg4Nyw1MzE0MTc4MTAsODkyNjU1NDk3LDUzMDAwMDM0
-MywtMTY5OTkwNzY0MywtMTk0OTg3MzYsLTExOTE3NTQ5NDQsOT
-I4ODY0OTc2LDE3NTIwODQwOTUsLTY1NTY3ODA4LDY5MDc5OTM1
-MiwtMTMxMTg4MTk5Ml19
+eyJoaXN0b3J5IjpbLTE0Mjc2NDM0MDcsLTE0Mjc2NDM0MDcsLT
+E4ODkxODc4ODcsNTMxNDE3ODEwLDg5MjY1NTQ5Nyw1MzAwMDAz
+NDMsLTE2OTk5MDc2NDMsLTE5NDk4NzM2LC0xMTkxNzU0OTQ0LD
+kyODg2NDk3NiwxNzUyMDg0MDk1LC02NTU2NzgwOCw2OTA3OTkz
+NTIsLTEzMTE4ODE5OTJdfQ==
 -->
