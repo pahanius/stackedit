@@ -66,7 +66,7 @@
 	
 6. Активируем аудиосессию
 
-	По умолчанию аудиосессией () SDK управлять не умеет, чтобы включить базовый функционал, нужно вызвать метод активации аудиосессии. Будет активирована громкая связь при разговоре и переключение на наушники при их подключении.
+	По умолчанию аудиосессией ([AVAudioSession](https://developer.apple.com/documentation/avfaudio/avaudiosession)) SDK управлять не умеет, чтобы включить базовый функционал, нужно вызвать метод активации аудиосессии. Будет активирована громкая связь при разговоре и переключение на наушники при их подключении. Если аудиосессию не активировать источники звука и микрона будут выбраны 
 	
 	```swift
 	client?.audioSessionActivate()
@@ -307,7 +307,7 @@ func  roomClientHandle(error: GCoreVideoCallsSDK.RoomError)
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4Mjg1NTYyOSwtMTQyNzY0MzQwNywtMT
+eyJoaXN0b3J5IjpbLTYwMDcxNjcxMywtMTQyNzY0MzQwNywtMT
 g4OTE4Nzg4Nyw1MzE0MTc4MTAsODkyNjU1NDk3LDUzMDAwMDM0
 MywtMTY5OTkwNzY0MywtMTk0OTg3MzYsLTExOTE3NTQ5NDQsOT
 I4ODY0OTc2LDE3NTIwODQwOTUsLTY1NTY3ODA4LDY5MDc5OTM1
