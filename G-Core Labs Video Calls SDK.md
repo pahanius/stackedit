@@ -49,8 +49,8 @@
 	```
 | Параметр| Тип | Описание| 
 |--|--|--|
-| roomId | String | Room ID to connect to |
-|displayName | String | Set display name of participant<br>[Link for extra details in knowledge base](https://gcorelabs.com/support/articles/4404682043665/#h_01FBPQAEZZ1GR7SF7G7TBAYJWZ)|
+| roomId | String | Room ID to connect to<br>*Example:* `roomId: "serv01234"` |
+|displayName | String | Set display name of participant<br>[Link for extra details in knowledge base](https://gcorelabs.com/support/articles/4404682043665/#h_01FBPQAEZZ1GR7SF7G7TBAYJWZ)<br>*Example:* `displayName: "John Snow"`|
 | peerId | String? (optional) | ID of a participant from your internal system. Please specify userID if you have your own. Or just leave this field blank, then the value will be generated automatically.<br>[Link for extra details in knowledge base](https://gcorelabs.com/support/articles/4404682043665/#h_01FBPQC18B1E3K58C05A8E81Y7)<br>*Example: displayName: "John Snow"*|
 | clientHostName | String? (optional) | В данном параметре клиент передает то доменное имя, которое он использует для эксплуатации веб версии мита. Значение: только домен без указания протокола.<br>*Example: clientHostName: "meet.gcore.lu"*|
 	
@@ -307,9 +307,9 @@ func  roomClientHandle(error: GCoreVideoCallsSDK.RoomError)
 
 На данный момент работа в фоне или бэкграунде не поддерживается, подключение будет активно только на включённом экране телефона. При прерывании конференции, если по каким либо причинам приложение было свёрнуто, нужно заново инициировать подключение к серверу (вход в комнату)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzgxNjQwNDEsLTIxNzY1MDY1NSwtMT
-QyNzY0MzQwNywtMTg4OTE4Nzg4Nyw1MzE0MTc4MTAsODkyNjU1
-NDk3LDUzMDAwMDM0MywtMTY5OTkwNzY0MywtMTk0OTg3MzYsLT
-ExOTE3NTQ5NDQsOTI4ODY0OTc2LDE3NTIwODQwOTUsLTY1NTY3
-ODA4LDY5MDc5OTM1MiwtMTMxMTg4MTk5Ml19
+eyJoaXN0b3J5IjpbMTM4NzIxOTE5MiwtMjE3NjUwNjU1LC0xND
+I3NjQzNDA3LC0xODg5MTg3ODg3LDUzMTQxNzgxMCw4OTI2NTU0
+OTcsNTMwMDAwMzQzLC0xNjk5OTA3NjQzLC0xOTQ5ODczNiwtMT
+E5MTc1NDk0NCw5Mjg4NjQ5NzYsMTc1MjA4NDA5NSwtNjU1Njc4
+MDgsNjkwNzk5MzUyLC0xMzExODgxOTkyXX0=
 -->
